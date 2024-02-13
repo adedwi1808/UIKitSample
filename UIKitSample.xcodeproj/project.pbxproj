@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5335FD052B7AFFD900834C78 /* PirateGroup.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5335FD042B7AFFD900834C78 /* PirateGroup.swift */; };
 		AD9B20A82B7A47210088ED69 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD9B20A72B7A47210088ED69 /* AppDelegate.swift */; };
 		AD9B20AA2B7A47210088ED69 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD9B20A92B7A47210088ED69 /* SceneDelegate.swift */; };
 		AD9B20AC2B7A47210088ED69 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD9B20AB2B7A47210088ED69 /* ViewController.swift */; };
@@ -16,6 +17,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		5335FD042B7AFFD900834C78 /* PirateGroup.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PirateGroup.swift; sourceTree = "<group>"; };
 		AD9B20A42B7A47210088ED69 /* UIKitSample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = UIKitSample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AD9B20A72B7A47210088ED69 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		AD9B20A92B7A47210088ED69 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -37,6 +39,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		5335FD032B7AFFAB00834C78 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				5335FD042B7AFFD900834C78 /* PirateGroup.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
 		AD9B209B2B7A47210088ED69 = {
 			isa = PBXGroup;
 			children = (
@@ -56,6 +66,7 @@
 		AD9B20A62B7A47210088ED69 /* UIKitSample */ = {
 			isa = PBXGroup;
 			children = (
+				5335FD032B7AFFAB00834C78 /* Model */,
 				AD9B20A72B7A47210088ED69 /* AppDelegate.swift */,
 				AD9B20A92B7A47210088ED69 /* SceneDelegate.swift */,
 				AD9B20AB2B7A47210088ED69 /* ViewController.swift */,
@@ -140,6 +151,7 @@
 			files = (
 				AD9B20AC2B7A47210088ED69 /* ViewController.swift in Sources */,
 				AD9B20A82B7A47210088ED69 /* AppDelegate.swift in Sources */,
+				5335FD052B7AFFD900834C78 /* PirateGroup.swift in Sources */,
 				AD9B20AA2B7A47210088ED69 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

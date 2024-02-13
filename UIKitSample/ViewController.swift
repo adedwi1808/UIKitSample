@@ -13,13 +13,6 @@ class ViewController: UIViewController,
     
     @IBOutlet weak var tableView: UITableView!
     
-    var sampleData: [String: [String]] = [
-        "Straw Hat Pirates": ["Luffy", "Zoro", "Nami", "Sanji", "Chopper", "Robin", "Franky", "Brook", "Jinbe"],
-        "Red Hair Pirates": ["Shanks", "Benn Beckman", "Yasopp", "Lucky Roux", "Rockstar"],
-        "Whitebeard Pirates": ["Edward Newgate", "Marco", "Jozu", "Vista", "Ace", "Thatch", "Blamenco", "Rakuyo", "Namur", "Blenheim", "Curiel", "Haruta", "Atmos", "Fossa", "Izo", "Squard"],
-        "Blackbeard Pirates": ["Marshall D. Teach (Blackbeard)", "Jesus Burgess", "Van Augur", "Doc Q", "Laffitte", "Shiliew", "Sanjuan Wolf", "Vasco Shot", "Catarina Devon", "Avalo Pizarro"]
-    ]
-
     override func viewDidLoad() {
         super.viewDidLoad()
         tableView.delegate = self
@@ -27,29 +20,21 @@ class ViewController: UIViewController,
     }
     
     func numberOfSections(in tableView: UITableView) -> Int {
-        sampleData.keys.count
+        sampleData.count
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        let pirateGroup = Array(sampleData.keys)[section]
-        let pirates = sampleData[pirateGroup] ?? []
-        return pirates.count
+        sampleData[section].crew.count
     }
 
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "Pirate", for: indexPath)
-        
-        let pirateGroup = Array(sampleData.keys)[indexPath.section]
-        let pirates = sampleData[pirateGroup] ?? []
-        let pirateName = pirates[indexPath.row]
-        
-        cell.textLabel?.text = pirateName
-        
+        cell.textLabel?.text = sampleData[indexPath.section].crew[indexPath.row]
         return cell
     }
     
     func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
-        Array(sampleData.keys)[section]
+        sampleData[section].name
     }
 }
 
